@@ -48,3 +48,5 @@ options is an array which contain one or multiple options elements.
      {"option-name1:value"},
      {"option-name2:value"}
     ]'
+
+** Series options are kept in a special subset of options called "series-options".
