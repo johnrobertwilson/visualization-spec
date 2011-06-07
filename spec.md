@@ -57,4 +57,15 @@ options is an array which contain one or multiple options elements.
     ]
 ```
 
->*Series options are kept in a special subset of options called "series-options".
+##### Series Options
+
+>*Series options is an array kept in a special subset of options called "series-options". Most third party rendering libraries separate the meta data for series into a separate subset of elements.
+
+```json
+"options": [
+     {"series-options":[
+      {"series1":[{"lineWidth":5},{"color":"#000"}]},
+      {"series2":[{"startAngle":-90},{"color":"#CCC"}]} 
+     ]}
+    ]
+```
