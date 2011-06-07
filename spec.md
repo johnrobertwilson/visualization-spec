@@ -62,8 +62,8 @@ var ziv = {
 ```json
 "options": [
      {"series-options":[
-      {"series1":[{"lineWidth":5},{"color":"#000"}]},
-      {"series2":[{"startAngle":-90},{"color":"#CCC"}]} 
+      {"series-name1":[{"lineWidth":5},{"color":"#000"}]},
+      {"series-name2":[{"startAngle":-90},{"color":"#CCC"}]} 
      ]}
     ]
 ```
