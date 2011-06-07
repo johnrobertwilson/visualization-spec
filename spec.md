@@ -49,11 +49,12 @@ series is an array which can contain one or multiple series elements.
 >*not required
 
 options is an array which contain one or multiple options elements.
-```
+
+```json
 "options": [
      {"option-name1:value"},
      {"option-name2:value"}
     ]
 ```
 
-** Series options are kept in a special subset of options called "series-options".
+>*Series options are kept in a special subset of options called "series-options".
