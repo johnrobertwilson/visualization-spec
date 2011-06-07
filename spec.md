@@ -34,8 +34,7 @@ var ziv = {
 #### Series
 
 >*required
-
-series is an array which can contain one or multiple series elements.
+>series is an array which can contain one or multiple series elements.
 
 ```json
 "series": [
@@ -47,8 +46,7 @@ series is an array which can contain one or multiple series elements.
 #### Options
 
 >*not required
-
-options is an array which contain one or multiple options elements.
+>options is an array which contain one or multiple options elements.
 
 ```json
 "options": [
