@@ -69,3 +69,22 @@ options is an array which contain one or multiple options elements.
      ]}
     ]
 ```
+
+##### Axes
+
+>Options for axes are defined in the axes element of options.
+
+```json
+"options": [
+     {"axes":[
+      {"yaxis":[{"option":"value""}]},
+      {"xaxis":[{"option":"value"}]},
+      {"zaxis":[{"option":"value"}]}
+     ]}
+    ]
+```
+
+##### Other Available Options
+
+* barDirection
+* shadowAngle
