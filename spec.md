@@ -15,12 +15,13 @@ ZIV utilizes JSON as its notation.
 #### Ziv Object
 
 The container object for all of the data to be rendered. It has two members: series and options.
-```javascript
+
+```
 var ziv = {
   "series":[
    {"series-name1":[[2,1], [4,2], [6,3], [3,4]]},
    {"series-name2":[['a',6], ['b',8], ['c',14], ['d',20]]}
-   ],
+   ],\n
   "options":[
    {"option1":value},
    {"option2":value}
