@@ -35,7 +35,8 @@ var ziv = {
 
 *required
 series is an array which can contain one or multiple series elements.
-```
+
+```json
 "series": [
      {"series-name1":[[1, 2],[3,5.12],[5,13.1],[7,33.6],[9,85.9],[11,219.9]],
      {"series-name2":[['a',1], ['b',2], ['c',3], ['d',4]]}
