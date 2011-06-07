@@ -84,5 +84,10 @@ var ziv = {
 
 ##### Other Available Options
 
+* title
+* description
+* legend
+* tooltip
 * barDirection
 * shadowAngle
+* plotOptions
