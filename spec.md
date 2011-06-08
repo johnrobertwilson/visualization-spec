@@ -19,12 +19,12 @@ The container object for all of the data to be rendered. It has two members: ser
 ```
 var ziv = {
   series:[
-   {name:"series-name1", data:[[2,1], [4,2], [6,3], [3,4]]},
-   {name:"series-name2", data:[['a',6], ['b',8], ['c',14], ['d',20]]}
+   {series_name:"series-name1", data:[[2,1], [4,2], [6,3], [3,4]]},
+   {series_name:"series-name2", data:[['a',6], ['b',8], ['c',14], ['d',20]]}
    ],
   options:[
-   {"option1":value},
-   {"option2":value}
+   {option1:value},
+   {option2:value}
    ]
 };
 ```
@@ -52,8 +52,8 @@ series: [
 
 ```json
 options: [
-     {option-name1:"value"},
-     {option-name2:"value"}
+     {option-name1:value},
+     {option-name2:value}
     ]
 ```
 
@@ -63,9 +63,9 @@ options: [
 
 ```json
 options: [
-     {series-options:[
-      {name:"series-name1", series-options:[{"lineWidth":5},{"color":"#000"}]},
-      {name:"series-name2", series-options:[{"startAngle":-90},{"color":"#CCC"}]} 
+     {series_options:[
+      {series_name:"series-name1", series_options:[{"lineWidth":5},{"color":"#000"}]},
+      {series_name:"series-name2", series_options:[{"startAngle":-90},{"color":"#CCC"}]} 
      ]}
     ]
 ```
