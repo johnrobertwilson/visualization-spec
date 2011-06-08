@@ -18,9 +18,9 @@ The container object for all of the data to be rendered. It has two members: ser
 
 ```
 var ziv = {
-  "series":[
-   {"series-name1":[[2,1], [4,2], [6,3], [3,4]]},
-   {"series-name2":[['a',6], ['b',8], ['c',14], ['d',20]]}
+  series:[
+   {name:"series-name1", data:[[2,1], [4,2], [6,3], [3,4]]},
+   {name:"series-name2", data:[['a',6], ['b',8], ['c',14], ['d',20]]}
    ],
   "options":[
    {"option1":value},
@@ -37,11 +37,11 @@ var ziv = {
 >series is an array which can contain one or multiple series elements.
 
 ```json
-"series": [
-     {"name":"series-name1",
-      "data": [[1, 2],[3,5.12],[5,13.1],[7,33.6],[9,85.9],[11,219.9]]},
-     {"name":"series-name2",
-      "data": [['a',1], ['b',2], ['c',3], ['d',4]]}
+series: [
+     {name:"series-name1",
+      data: [[1, 2],[3,5.12],[5,13.1],[7,33.6],[9,85.9],[11,219.9]]},
+     {name:"series-name2",
+      data: [['a',1], ['b',2], ['c',3], ['d',4]]}
     ]
 ```
 
