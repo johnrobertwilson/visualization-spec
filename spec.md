@@ -22,10 +22,10 @@ var ziv = {
    {series_name:"series-name1", data:[[2,1], [4,2], [6,3], [3,4]]},
    {series_name:"series-name2", data:[['a',6], ['b',8], ['c',14], ['d',20]]}
    ],
-  options:[
-   {option1:value},
-   {option2:value}
-   ]
+  options:
+   {option1:value,
+    option2:value}
+
 };
 ```
 
@@ -48,13 +48,13 @@ series: [
 #### Options
 
 >*not required
->options is an array which contain one or multiple options elements.
+>options is an object which contains one or multiple options elements.
 
 ```json
-options: [
-     {option-name1:value},
-     {option-name2:value}
-    ]
+options:
+     {option-name1:value,
+      option-name2:value}
+
 ```
 
 ##### Series Options
@@ -62,12 +62,12 @@ options: [
 >*Series options is an array kept in a special subset of options called "series-options". Most third party rendering libraries separate the meta data for series into a separate subset of elements.
 
 ```json
-options: [
+options:
      {series_options:[
       {series_name:"series-name1", series_options:[{"lineWidth":5},{"color":"#000"}]},
       {series_name:"series-name2", series_options:[{"startAngle":-90},{"color":"#CCC"}]} 
-     ]}
-    ]
+     ]
+    ...
 ```
 
 ##### Axes
@@ -75,13 +75,13 @@ options: [
 >Options for axes are defined in the axes element of options.
 
 ```json
-options: [
-     {axes:[
-      {"yaxis":[{"option":"value""}]},
-      {"xaxis":[{"option":"value"}]},
-      {"zaxis":[{"option":"value"}]}
-     ]}
-    ]
+options:
+     { axes:[
+       {"yaxis":[{"option":"value""}]},
+       {"xaxis":[{"option":"value"}]},
+       {"zaxis":[{"option":"value"}]}
+       ],
+     ...
 ```
 
 ##### Other Available Options
