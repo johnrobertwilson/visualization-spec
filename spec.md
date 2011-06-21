@@ -56,7 +56,7 @@ var vizstruct_object = {
       "option-name2" : "value" }
 
 ```
-###### Title
+##### Title
 
 >The main title of the chart. Title is an object containing optional members:
 
@@ -76,7 +76,7 @@ var vizstruct_object = {
 }
 ```
 
-##### Series Options
+#### Series Options
 
 >Series options is an array kept in a special subset of options called "series-options". Most third party rendering libraries separate the meta data for series into a separate subset of elements.
 
@@ -89,7 +89,7 @@ var vizstruct_object = {
     ...
 ```
 
-##### Axes
+#### Axes
 
 >Options for axes are defined in the axes element of options.
 
@@ -103,9 +103,9 @@ var vizstruct_object = {
      ...
 ```
 
-##### Other Options
+#### Other Options
 
-###### Colors
+##### Colors
 
 >An array containing the default colors for the chart's series. When all colors are used, new colors are pulled from the start again.
 
@@ -125,10 +125,11 @@ var vizstruct_object = {
      ...
 ```
 
-###### ToolTips
+##### ToolTips
 >Options object for the tooltip that appears when the user hovers over a series and points. 
 
 Tooltip has several optional options:
+
 * backgroudnColor - hex or rgb value
 * borderColor - auto or hex or rgb value
 * borderRadius - the radius of the rounded border corners
@@ -153,7 +154,7 @@ Tooltip has several optional options:
 }
 ```
 
-######TO DO OPTIONS
+##### TO DO OPTIONS
 * description
 * legend
 * shadowAngle
