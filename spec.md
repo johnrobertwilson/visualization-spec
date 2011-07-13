@@ -64,14 +64,50 @@ var vizstruct_object = {
 * align - The horizontal alignment of the title _left_ _center_ _right_
 * verticalAlign - The vertical alignment of the title _top_ _middle_ _bottom_
 * float - When set to true, the plot area will not move to make space for it. Defaults to false.
+* color - The Hex value for the color of the title text.
 
 ```json
 "options" : {
 	"title": {
 	"text" : "Chart title",
 	"align" : "center",
-	"float" : false,
 	"verticalAlign" : "top",
+	"color" : "#000000",
+	},
+}
+```
+##### Description
+
+>The sub-text below the title.  Description is an object containing optional member:
+
+* text - The description for the chart.
+* color - The Hex value for the color of the description text.
+
+```json
+"options" : {
+	"description": {
+	"text" : "Chart description",
+	"color" : "#000000",
+	},
+}
+```
+
+#### Legend
+
+>The legend for the chart linking names and colors to visualized series.  Legend is an object containing the following members:
+
+* show - Show or hide the legend, can be true or false
+* position - The position of the legend in the visualization, uses compass values: n, s, e, w, nw, sw, ne, se
+* color - The hex color of the font of the legend.
+* background-color - The background color of the legend.
+
+```json
+"options" : {
+	"legend": {
+	"show" : true,
+	"color" : "#000000",
+	"position": "e",
+	"background-color":"#FFFFFF",
 	},
 }
 ```
@@ -82,10 +118,22 @@ var vizstruct_object = {
 
 ```json
 "options" :
-     { "series_options:[
-       { "series_name" : "series-name1", series_options:[{"lineWidth":5},{"color":"#000"}]},
-       { "series_name" : "series-name2", series_options:[{"startAngle":-90},{"color":"#CCC"}]} 
+     { "seriesOptions:[
+       { "series_name" : "series-name1", seriesOptions:[{"lineWidth":5},{"color":"#000"}]},
+       { "series_name" : "series-name2", seriesOptions:[{"startAngle":-90},{"color":"#CCC"}]} 
      ]
+    ...
+```
+
+#### Plot Options
+
+>Plot options is an object containing information about the plot area.  It contains the following members:
+
+* background-color
+
+```json
+"options" :
+     { "plotOptions": { "background-color" : "#FFFFFF"},
     ...
 ```
 
@@ -155,7 +203,4 @@ Tooltip has several optional options:
 ```
 
 ##### TO DO OPTIONS
-* description
-* legend
-* shadowAngle
 * plotOptions
