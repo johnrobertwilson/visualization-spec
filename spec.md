@@ -119,8 +119,8 @@ var vizstruct_object = {
 ```json
 "options" :
      { "seriesOptions:[
-       { "series_name" : "series-name1", seriesOptions:[{"lineWidth":5},{"color":"#000"}]},
-       { "series_name" : "series-name2", seriesOptions:[{"startAngle":-90},{"color":"#CCC"}]} 
+       { "seriesName" : "series-name1", seriesOptions:{"lineWidth" : 5, "color" : "#000" }},
+       { "seriesName" : "series-name2", seriesOptions:{"startAngle" : -90, "color" : "#CCC" }} 
      ]
     ...
 ```
@@ -143,11 +143,10 @@ var vizstruct_object = {
 
 ```json
 "options" :
-     { "axes" : [
-       { "yaxis" :[{"option":"value""}]},
-       { "xaxis" : [{"option":"value"}]},
-       { "zaxis" : [{"option":"value"}]}
-       ],
+     { "axes" : { "yaxis" : {"option" : "value", "option2" : "value2"},
+                  "xaxis" : {"option" : "value" },
+       			  "zaxis" : {"option" : "value" }
+       },
      ...
 ```
 
