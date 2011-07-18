@@ -19,8 +19,8 @@ The container object for all of the data to be rendered. It has two members: ser
 ```
 var vizstruct_object = {
   "series" : [
-   {"series_name":"series-name1", data:[[2,1], [4,2], [6,3], [3,4]]},
-   {"series_name":"series-name2", data:[['a',6], ['b',8], ['c',14], ['d',20]]}
+   {"seriesName":"series-name1", data:[[2,1], [4,2], [6,3], [3,4]]},
+   {"seriesName":"series-name2", data:[['a',6], ['b',8], ['c',14], ['d',20]]}
    ],
   options:
    {"option1" : "value",
@@ -38,9 +38,9 @@ var vizstruct_object = {
 
 ```json
 "series": [
-     { "name" : "series-name1",
+     { "seriesName" : "series-name1",
        "data" : [[1, 2],[3,5.12],[5,13.1],[7,33.6],[9,85.9],[11,219.9]]},
-     { "name" : "series-name2",
+     { "seriesName" : "series-name2",
        "data": [['a',1], ['b',2], ['c',3], ['d',4]]}
     ]
 ```
@@ -103,11 +103,11 @@ var vizstruct_object = {
 
 ```json
 "options" : {
-	"legend": {
+	"legend" : {
 	"show" : true,
 	"color" : "#000000",
-	"position": "e",
-	"background-color":"#FFFFFF",
+	"position" : "e",
+	"backgroundColor" : "#FFFFFF",
 	},
 }
 ```
@@ -119,8 +119,8 @@ var vizstruct_object = {
 ```json
 "options" :
      { "seriesOptions:[
-       { "seriesName" : "series-name1", seriesOptions:{"lineWidth" : 5, "color" : "#000" }},
-       { "seriesName" : "series-name2", seriesOptions:{"startAngle" : -90, "color" : "#CCC" }} 
+       { "seriesName" : "series-name1", "seriesOptions" : {"lineWidth" : 5, "color" : "#000" }},
+       { "seriesName" : "series-name2", "seriesOptions" : {"startAngle" : -90, "color" : "#CCC" }} 
      ]
     ...
 ```
@@ -133,7 +133,7 @@ var vizstruct_object = {
 
 ```json
 "options" :
-     { "plotOptions": { "background-color" : "#FFFFFF"},
+     { "plotOptions": { "backgroundColor" : "#FFFFFF"},
     ...
 ```
 
@@ -200,6 +200,3 @@ Tooltip has several optional options:
 	},
 }
 ```
-
-##### TO DO OPTIONS
-* plotOptions
