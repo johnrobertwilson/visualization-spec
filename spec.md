@@ -106,7 +106,7 @@ var vizstruct_object = {
 	"legend" : {
 	"show" : true,
 	"color" : "#000000",
-	"position" : "e",
+	"location" : "e",
 	"backgroundColor" : "#FFFFFF",
 	},
 }
