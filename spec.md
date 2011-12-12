@@ -22,7 +22,7 @@ var vizstruct_object = {
    {"seriesName":"series-name1", data:[[2,1], [4,2], [6,3], [3,4]]},
    {"seriesName":"series-name2", data:[['a',6], ['b',8], ['c',14], ['d',20]]}
    ],
-  options:
+  "options":
    {"option1" : "value",
     "option2" : "value"}
 
