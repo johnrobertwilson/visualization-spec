@@ -120,7 +120,7 @@ var vizstruct_object = {
 
 ```json
 "options" :
-     { "seriesOptions:[
+     { "seriesOptions":[
        { "seriesName" : "series-name1", "seriesOptions" : {"lineWidth" : 5, "color" : "#000" }},
        { "seriesName" : "series-name2", "seriesOptions" : {"startAngle" : -90, "color" : "#CCC" }} 
      ]
